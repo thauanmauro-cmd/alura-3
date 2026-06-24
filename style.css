@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Digital Seguro</title>
     <style>
-        /* Cores principais pensadas para alto contraste e fácil leitura */
         :root {
             --cor-fundo: #F4F6F9;
-            --cor-card: #FFFFFF;
+            --cor-cartao: #FFFFFF;
             --cor-texto: #1A1A1A;
-            --cor-primaria: #00468C; /* Azul escuro bem visível */
-            --cor-alerta: #D32F2F; /* Vermelho para avisos */
-            --cor-sucesso: #2E7D32; /* Verde para dicas positivas */
+            --cor-primaria: #00468C; 
+            --cor-alerta: #D32F2F; 
+            --cor-sucesso: #2E7D32; 
         }
 
         * {
@@ -30,7 +29,7 @@
         }
 
         /* Topo do Aplicativo */
-        header {
+        .cabecalho {
             background-color: var(--cor-primaria);
             color: white;
             text-align: center;
@@ -40,197 +39,17 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        header h1 {
-            font-size: 2.2rem; /* Fonte grande */
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.3rem;
-        }
-
-        /* Container Principal */
-        main {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Seção de Introdução */
-        .intro {
-            background-color: var(--cor-card);
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 20px;
-            border-left: 8px solid var(--cor-primaria);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        .intro p {
-            font-size: 1.3rem;
-            font-weight: bold;
-        }
-
-        /* Cards de Dicas */
-        .card-dica {
-            background-color: var(--cor-card);
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .card-dica h2 {
-            font-size: 1.6rem;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .alerta h2 {
-            color: var(--cor-alerta);
-        }
-
-        .sucesso h2 {
-            color: var(--cor-sucesso);
-        }
-
-        .card-dica p {
-            font-size: 1.3rem; /* Tamanho confortável para leitura */
-            margin-bottom: 15px;
-            color: #333333;
-        }
-
-        /* Botões Grandes e Acessíveis */
-        .botao-acao {
-            display: block;
-            width: 100%;
-            background-color: var(--cor-primaria);
-            color: white;
-            text-align: center;
-            padding: 18px;
-            font-size: 1.4rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: background-color 0.2s;
-        }
-
-        .botao-acao:hover, .botao-acao:focus {
-            background-color: #002D5C;
-            outline: 4px solid #FFCC00; /* Destaque visual para navegação por teclado */
-        }
-
-        /* Rodapé com canais de ajuda */
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            font-size: 1.2rem;
-            color: #555555;
-            border-top: 2px solid #DDD;
-        }
-
-        footer a {
-            color: var(--cor-primaria);
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>Guia Digital Seguro</h1>
-        <p>Aprenda a usar a internet com segurança e tranquilidade</p>
-    </header>
-
-    <main>
-        <section class="intro">
-            <p>O mundo digital é para todos! Veja abaixo as principais dicas para se proteger de golpes e navegar sem medo.</p>
-        </section>
-
-        <section class="card-dica alerta">
-            <h2>⚠️ Atenção com Mensagens</h2>
-            <p>Se receber uma mensagem de um número desconhecido fingindo ser seu filho, neto ou o seu banco pedindo dinheiro urgente, <strong>não envie nada</strong>.</p>
-            <p>Ligue imediatamente para o número normal da pessoa por fora do aplicativo para confirmar se é verdade.</p>
-            <button class="botao-acao" onclick="alert('Dica guardada! Nunca envie dinheiro ou códigos por mensagem sem antes telefonar para confirmar.')">Entendi esta dica</button>
-        </section>
-
-        <section class="card-dica sucesso">
-            <h2>🔒 Senhas Seguras</h2>
-            <p>Evite usar sua data de nascimento ou sequências simples como "1234" em suas senhas. Misture letras e números sempre que puder.</p>
-            <p>Anote suas senhas importantes em um caderno físico guardado em um local seguro na sua casa, longe do celular.</p>
-            <button class="botao-acao" onclick="alert('Ótimo! Guardar senhas em um caderno em casa é muito mais seguro do que salvá-las no próprio celular.')">Vou fazer isso</button>
-        </section>
-
-        <section class="card-dica alerta">
-            <h2>🔗 Links Suspeitos</h2>
-            <p>Cuidado com links recebidos que prometem prêmios, sorteios ou descontos exagerados. Bancos e correios não costumam mandar links para atualização de dados.</p>
-            <p>Na dúvida, não clique. Pergunte para alguém de sua total confiança primeiro.</p>
-            <button class="botao-acao" onclick="alert('Perfeito! Evitar clicar em links desconhecidos protege seu aparelho de vírus e roubo de dados.')">Ficarei atento(a)</button>
-        </section>
-    </main>
-
-    <footer>
-        <p>Precisa de ajuda urgente? Ligue para um familiar ou procure a Polícia Civil da sua cidade.</p>
-    </footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia Digital Seguro</title>
-    <style>
-        :root {
-            --cor-fundo: #F4F6F9;
-            --cor-card: #FFFFFF;
-            --cor-texto: #1A1A1A;
-            --cor-primaria: #00468C; 
-            --cor-alerta: #D32F2F; 
-            --cor-sucesso: #2E7D32; 
-            --cor-destaque: #E6F0FA;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: var(--cor-fundo);
-            color: var(--cor-texto);
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        header {
-            background-color: var(--cor-primaria);
-            color: white;
-            text-align: center;
-            padding: 25px 15px;
-            border-radius: 12px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
+        .cabecalho h1 {
             font-size: 2.2rem;
             margin-bottom: 10px;
         }
 
-        header p {
+        .cabecalho p {
             font-size: 1.3rem;
         }
 
-        main {
+        /* Container Principal */
+        .conteudo-principal {
             max-width: 650px;
             margin: 0 auto;
         }
@@ -244,24 +63,16 @@
             border-bottom: 3px solid var(--cor-primaria);
         }
 
-        /* Estilo dos Cards */
-        .card {
-            background-color: var(--cor-card);
+        /* Estilo dos Cartões */
+        .cartao {
+            background-color: var(--cor-cartao);
             border-radius: 12px;
             padding: 25px;
             margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        .card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .card p {
+        .cartao p {
             font-size: 1.3rem;
             margin-bottom: 12px;
             color: #333333;
@@ -320,7 +131,8 @@
             outline: 4px solid #FFCC00;
         }
 
-        footer {
+        /* Rodapé */
+        .rodape {
             text-align: center;
             margin-top: 40px;
             padding: 20px;
@@ -332,16 +144,16 @@
 </head>
 <body>
 
-    <header>
+    <header class="cabecalho">
         <h1>Guia Digital Seguro</h1>
         <p>Aprenda a usar a internet com segurança e tranquilidade</p>
     </header>
 
-    <main>
+    <main class="conteudo-principal">
 
         <h2 class="titulo-secao">⚖️ Seus Direitos na Internet</h2>
             
-        <section class="card">
+        <section class="cartao">
             <p>Assim como na vida real, você tem leis que te protegem no mundo digital. O <strong>Estatuto do Idoso</strong> e a <strong>Lei Geral de Proteção de Dados (LGPD)</strong> garantem que:</p>
             
             <ul class="lista-acessivel">
@@ -355,7 +167,7 @@
 
         <h2 class="titulo-secao">🧐 Como Saber se Estou Caindo em um Golpe?</h2>
 
-        <section class="card">
+        <section class="cartao">
             <p>Os criminosos costumam usar as mesmas táticas para enganar as pessoas. Fique muito atento se notar qualquer uma destas <strong>4 atitudes suspeitas</strong>:</p>
 
             <ul class="lista-acessivel lista-golpes">
@@ -370,7 +182,7 @@
 
     </main>
 
-    <footer>
+    <footer class="rodape">
         <p>Precisa de ajuda? Não tenha vergonha de perguntar a alguém de sua confiança.</p>
     </footer>
 
